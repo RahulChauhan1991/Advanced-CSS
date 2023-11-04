@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .back,.front,.top,.bottom,.left,.right{
+            width: 100px;
+            height: 100px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            padding:40px;
+        }
+        .back{
+            z-index: 0;
+            transform: rotateY('90deg');
+            transform-style: preserve-3d;
+            background-color: blue;
+        }
+        .front{
+            z-index: 0;
+            transform: rotateY('180deg');
+            transform-style: preserve-3d;
+            background-color: red;
+        }
+        .top{
+            z-index: 0;
+            transform: rotateY('260deg');
+            transform-style: preserve-3d;
+        }
+        .bottom{
+            z-index: 3;
+        }
+        .left{
+            z-index: 4;
+        }
+        .right{
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back">back</div>
+        <div class="front">front</div>
+        <div class="top">top</div>
+        <div class="bottom">bottom</div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>

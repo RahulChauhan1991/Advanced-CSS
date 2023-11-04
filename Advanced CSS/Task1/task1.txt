@@ -1,0 +1,2 @@
+Explain the purpose of using the var() function in css.
+Ans. The purpose of using the var() function is to use custom properties defined in the parent to be used anywhere in the code.  
